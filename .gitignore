@@ -1,3 +1,8 @@
+# This demo is expected to be installed using SaltStack ...
+# which will supply a modified manage.py and wsgi.py so after the first commit, never look at them again.
+manage.py
+demo/wsgi.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,5 +1,5 @@
 """
-WSGI config for x project.
+WSGI config for demo project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
