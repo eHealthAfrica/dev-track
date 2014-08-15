@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello, World</title>
+</head>
+<body>
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+<h1>Hello, World</h1>
+You are now reading a very simple static template page.<br/>
+The present time and date is: {% now "DATETIME_FORMAT" %}<br/>
+
+<p>
+    You can use the <a href="{% url 'admin' %}"> django admin</a> if you want.
+</p>
+
+<p>
+   This pretty picture shows a wintry morning (and that STATIC files work.)<br/>
+    <img src="{% STATIC_PREFIX %}test.jpg" />
+<small> Wagon Box Inn; Storey, Wyoming, USA <small/>
+<p/>
+<p>
+    When you drive in weather like that, icicles can form stars. (this is a MEDIA file.)<br/>
+    <img src="{% get_media_prefix %}test.jpg" />
+    <small>Detail: front wheel of pickup. 2009:04:04. Storey, Wyoming, USA</small>
+</p>
+</body>
+</html>
