@@ -1,5 +1,5 @@
 """
-Django settings for x project.
+Django settings for dev-track project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -81,6 +81,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
